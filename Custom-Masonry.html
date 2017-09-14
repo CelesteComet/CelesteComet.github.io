@@ -21,7 +21,7 @@
 
 
 
-
+  var page = 1;
 
 
 
@@ -139,17 +139,19 @@
           var docHeight = Math.max( body.scrollHeight, body.offsetHeight, 
                        html.clientHeight, html.scrollHeight, html.offsetHeight) - window.innerHeight;
           if (scrollTop  >= docHeight) {
-            xhttp.open("GET", "https://api.500px.com/v1/photos?feature=popular&consumer_key=80QdMMZx9Uv6uNJCp7REM47GzG5e0mOno5DhtkbY&image_size=4&only=nude", true)
+            xhttp.open("GET", "https://api.500px.com/v1/photos?feature=popular&consumer_key=80QdMMZx9Uv6uNJCp7REM47GzG5e0mOno5DhtkbY&image_size=4&only=nude&page=" + page, true)
             xhttp.setRequestHeader("Content-Type", "text/plain;charset=UTF-8");  
-            xhttp.send();                      
+            xhttp.send();
+            page += 1;                      
           }
         }, false)
       }
     }
 
-    xhttp.open("GET", "https://api.500px.com/v1/photos?feature=popular&consumer_key=80QdMMZx9Uv6uNJCp7REM47GzG5e0mOno5DhtkbY&image_size=4&only=nude", true)
+    xhttp.open("GET", "https://api.500px.com/v1/photos?feature=popular&consumer_key=80QdMMZx9Uv6uNJCp7REM47GzG5e0mOno5DhtkbY&image_size=4&only=nude&page=" + page, true)
     xhttp.setRequestHeader("Content-Type", "text/plain;charset=UTF-8");
     xhttp.send();
+    page += 1;
   } 
 
 </script>
