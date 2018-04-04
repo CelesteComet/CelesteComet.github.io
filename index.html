@@ -3,7 +3,73 @@
 <head>
   <title>Celeste Comet</title>
 </head>
+<style type="text/css">
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    padding-left: 10px;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  .projects li {
+    margin-bottom: 20px;
+  }
+
+  figure img {
+    width: 500px;
+    height: 250px;
+  }
+
+  figcaption {
+    width: 500px;
+  }
+</style>
 <body>
   <h1>Bruce Wong</h1>
+  <section>
+    <ul>
+      <li>Software Developer</li>
+      <br>
+      <li>Contact Info:</li>
+      <li>Phone: (510) 209-9995</li>
+      <li>Email: brucewong21@gmail.com</li>
+      <li>Resume: </li>
+    </ul>
+  </section>
+  <br>
+  <section>
+    <h2>Projects</h2>
+    <br>
+    <ul class='projects'>
+      <li>
+        <section>
+          <h3>Skypii</h3>
+          <figure>
+            <img src="">
+            <figcaption>
+              <p>A skype clone built on Ruby on Rails with ActionCable for realtime chat functionality. Uses React with Redux for the frontend.</p>
+            </figcaption>
+          </figure>
+        </section>
+      </li>
+      <li>
+        <section>
+          <h3><a href='https://music-shield.herokuapp.com'>Music Shield</a></h3>
+          <figure>
+            <img src="images/music-shield.png">
+            <figcaption>
+              <p>A WebVr app where you use your GearVR remote to block beats synced to the music of Despacito.</p>
+            </figcaption>
+          </figure>
+        </section>
+      </li>
+    </ul>
+  </section>
 </body>
 </html>
